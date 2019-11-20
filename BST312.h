@@ -1,3 +1,32 @@
+
+/*  BST312.h
+  CS 312 Fall 2018
+
+  a simple implementation of a binary search tree
+
+
+*/
+
+#ifndef BST_312_H
+#define BST_312_H
+
+#include <cstdlib>  // Provides size_t
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+template <class ItemType>
+class BST_312 {
+public:
+
+    BST_312();
+
+    //Copy constructor
+    BST_312(const BST_312 & src);
+
+    ~BST_312();
+
 /****************************
 makeEmpty
 
@@ -419,5 +448,6 @@ bool BST_312 <ItemType>::isItemInTree(const ItemType& item) {
         return false;
     }
 }
+
 #endif
 
